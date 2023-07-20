@@ -14,4 +14,4 @@ while ($i < count($cars)) {
     echo "The Car in place number ", $i + 1, " is ", $cars[$i], ".", "<br>";
     $i++;
 }
-
+echo "Hey, this is a testing for push to GitHub";
