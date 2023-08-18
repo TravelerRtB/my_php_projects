@@ -1,5 +1,5 @@
 <!
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -17,6 +17,7 @@
 
 </body>
 </html>
+
 <?php
     $x = $_POST["x"];
 
