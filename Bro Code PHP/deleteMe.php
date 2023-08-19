@@ -8,21 +8,35 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="deleteMe.php" method="post">
+    <form action="deleteMe.php" method="POST">
+        <label>x:</label>
         <label>
-            <input type="text" name="x">
-            <input type="submit" value="Result is">
-        </label>
+            <input type="text" name="x" placeholder="Enter a number here">
+        </label><br><br>
+        <label>y:</label>
+        <input type="text" name="y" placeholder="Enter a number here"><br><br>
+        <label>z:</label>
+        <input type="text" name="z" placeholder="Enter a number here"><br><br>
+         <label>w:</label>
+        <input type="text" name="w" placeholder="Enter a number here"><br><br>
+
+        <input type="submit" value="Result is"><br><br>
+
     </form>
 
 </body>
 </html>
-
 <?php
     $x = $_POST["x"];
+    $y = $_POST["y"];
+    $z = $_POST["z"];
+    $w = $_POST["w"];
 
-    $newNum = abs($x);
+    $total = null;
 
-    echo $newNum;
+    //$newNum = abs($x);
+    $total = max($x, $y, $z, $w);
+    echo $total;
+
 
 
